@@ -1,8 +1,6 @@
-- 👋 Hi, I’m @stijntratsaertit
-- 👀 I’m interested in DevOps & Cloud stuff!
-- 🌱 I’m currently learning DevOps & Cloud stuff!
-- 💞️ I’m looking to collaborate on DevOps & Cloud stuff!
-- 📫 How to reach me stijn.tratsaert.it@gmail.com
+- 👋 Hi, I’m Stijn Tratsaert
+- 👀 I love the cloud and am very interested in DevOps.
+- 📫 You can reach me at stijn.tratsaert.it@gmail.com or stijn@uman.ai
 
 <!---
 stijntratsaertit/stijntratsaertit is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
