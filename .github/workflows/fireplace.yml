@@ -1,0 +1,49 @@
+name: Build Fireplace APK
+
+on:
+  push:
+    paths:
+      - "fireplace/**"
+      - ".github/workflows/fireplace.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: fireplace
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Build APK
+        run: |
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleRelease
+          cp app/build/outputs/apk/release/app-release.apk fireplace.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fireplace-apk
+          path: fireplace/fireplace.apk
+
+      # A fixed download link for the TV's Downloader app:
+      # https://github.com/<owner>/<repo>/releases/download/fireplace-latest/fireplace.apk
+      - name: Publish to the fireplace-latest release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: fireplace-latest
+          name: Fireplace (latest build)
+          body: "Latest Fireplace APK, built from ${{ github.sha }}. Install with adb or the Downloader app on the TV."
+          prerelease: true
+          files: fireplace/fireplace.apk

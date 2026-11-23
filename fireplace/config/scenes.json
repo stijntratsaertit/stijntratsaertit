@@ -1,0 +1,61 @@
+{
+  "_help": "Edit this file to change your scenes, then push. GitHub builds a new APK automatically. Each scene with \"tile\": true gets its own tile in Projectivy and its own name for 'Hey Google, open <title>'. 'url' can be any YouTube link: a video, a playlist or a search. Once you find a video or playlist you like, paste its link here instead of the search link. 'id' must be lowercase letters, digits and underscores, and must stay the same once installed.",
+
+  "players": [
+    "com.teamsmart.videomanager.tv",
+    "com.liskovsoft.smarttubetv.beta",
+    "com.liskovsoft.smarttubetv",
+    "com.google.android.youtube.tv"
+  ],
+
+  "scenes": [
+    {
+      "id": "fireplace",
+      "title": "Fireplace Classic",
+      "subtitle": "Just the fire",
+      "url": "https://www.youtube.com/results?search_query=realistic+fireplace+4k+10+hours+no+music",
+      "color": "#C2410C",
+      "tile": true
+    },
+    {
+      "id": "fireplace_jazz",
+      "title": "Fireplace Jazz",
+      "subtitle": "Fire with soft jazz",
+      "url": "https://www.youtube.com/results?search_query=cozy+fireplace+jazz+4k+long",
+      "color": "#B45309",
+      "tile": true
+    },
+    {
+      "id": "fireplace_piano",
+      "title": "Fireplace Piano",
+      "subtitle": "Fire with calm piano",
+      "url": "https://www.youtube.com/results?search_query=fireplace+piano+music+4k+long",
+      "color": "#9A3412",
+      "tile": true
+    },
+    {
+      "id": "fireplace_christmas",
+      "title": "Fireplace Christmas",
+      "subtitle": "Fire with Christmas music",
+      "url": "https://www.youtube.com/results?search_query=christmas+fireplace+music+4k+10+hours",
+      "color": "#B91C1C",
+      "tile": true
+    },
+    {
+      "id": "cabin_snow",
+      "title": "Snowy Cabin",
+      "subtitle": "Cabin interior, snow outside",
+      "url": "https://www.youtube.com/results?search_query=cozy+cabin+fireplace+snowfall+ambience+4k",
+      "color": "#1D4ED8",
+      "tile": true
+    },
+    {
+      "id": "winter_window",
+      "title": "Winter Window",
+      "subtitle": "Snowfall through a window",
+      "url": "https://www.youtube.com/results?search_query=snowy+window+view+fireplace+ambience+4k",
+      "color": "#0F766E",
+      "tile": false
+    }
+  ]
+}
